@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.pos.puc.trabalhofinal.Cadastro"
+    android:id="@+id/relativeLayout">
+
+    <TextView android:text="Crie um novo contato ou visualize os existentes" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textCabecalho" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adicionar"
+        android:id="@+id/btnCadastrarContato"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="123dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Listar Existentes"
+        android:id="@+id/listarContatos"
+        android:layout_alignTop="@+id/btnCadastrarContato"
+        android:layout_alignEnd="@+id/textCabecalho" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/telefoneContato"
+        android:layout_above="@+id/emailContato"
+        android:layout_alignStart="@+id/emailContato" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/emailContato"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/btnCadastrarContato" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nomeContato"
+        android:layout_above="@+id/telefoneContato"
+        android:layout_alignStart="@+id/telefoneContato"
+        android:layout_alignEnd="@+id/telefoneContato"
+        android:inputType="text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Nome"
+        android:id="@+id/textView2"
+        android:layout_above="@+id/telefoneContato" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Telefone"
+        android:id="@+id/textView3"
+        android:layout_alignBottom="@+id/telefoneContato" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Email"
+        android:id="@+id/textView4"
+        android:layout_alignBottom="@+id/emailContato"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

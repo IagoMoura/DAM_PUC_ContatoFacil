@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Contato Fácil</string>
+
+    <string name="hello_world">Informe suas credenciais</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_cadastro">Cadastro</string>
+    <string name="title_activity_listagem">Listagem</string>
+</resources>
